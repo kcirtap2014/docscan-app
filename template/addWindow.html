@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Add Item</title>
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <div class="container">
+    <form >
+      <div >
+        <label >Nom du fichier</label>
+        <input type="image" id="item" autofocus>
+        <div class="box__input">
+          <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+          <label for="file"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</label>
+          <div class="">
+            <button class="box__button btn waves-effect waves-light" type="submit">Upload</button>
+          </div>
+
+        </div>
+        <div class="box__uploading">Uploading&hellip;</div>
+        <div class="box__success">Done!</div>
+        <div class="box__error">Error! <span></span>.</div>
+      </div>
+      <!--<button class = "btn waves-effect waves-light" type="submit" >Add Item</button>-->
+
+    </form>
+  </div>
+
+</body>
+  <script>
+      require('../addWindow.js')
+  </script>
+</html>

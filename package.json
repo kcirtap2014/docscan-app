@@ -11,6 +11,6 @@
     "electron": "^1.8.4"
   },
   "dependencies": {
-    "python-shell": "^1.0.7"
+    "python-shell": "^1.0.8"
   }
 }
